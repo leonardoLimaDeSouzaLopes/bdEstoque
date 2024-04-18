@@ -70,12 +70,4 @@ VALUES
 	,(8, 6, 250, 1700.00)
 	,(8, 5, 200, 1700.00)
 	,(9, 4, 1000, 4000.00)
-
-SELECT* FROM tbCliente
-SELECT* FROM tbFabricante
-SELECT* FROM tbFornecedor
-SELECT* FROM tbItensVenda
-SELECT* FROM tbProduto
-SELECT* FROM tbVenda
-
  

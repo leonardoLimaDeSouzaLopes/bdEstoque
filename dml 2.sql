@@ -1,5 +1,4 @@
 USE bdEstoque
-SELECT * FROM tbVenda
 
 -- 1
 UPDATE tbProduto
