@@ -48,24 +48,3 @@ SELECT SUM (tbVenda.valorTotalVenda) AS 'Vendas', tbCliente.nomeCliente AS 'Clie
 	INNER JOIN tbVenda ON tbCliente.idCliente = tbVenda.idCliente
 	WHERE MONTH(tbVenda.dataVenda) = 2 AND YEAR(tbVenda.dataVenda) = 2014
 	GROUP BY tbCliente.nomeCliente
-
---EXERCICIOS JOINS
-
---2)
-SELECT descricaoProduto AS 'Descrição produto', nomeFornecedor AS 'Nome fornecedores' FROM tbFornecedor F
-	INNER JOIN tbProduto P ON P.idFornecedor = F.idFornecedor
-
---3)
-SELECT descricaoProduto AS 'Nome produto' , nomeFornecedor AS 'Nome fornecedores'FROM tbFornecedor f
-	LEFT JOIN tbProduto p ON p.idFornecedor = f.idFornecedor
-
-SELECT descricaoProduto AS 'Nome produto' , nomeFornecedor AS 'Nome fornecedores'FROM tbFornecedor f
-	RIGHT JOIN tbProduto p ON p.idFornecedor = f.idFornecedor
-
---5)
-SELECT nomeFornecedor AS 'Fornecedor', descricaoProduto AS 'Produto' FROM tbFornecedor
-	FULL JOIN tbProduto ON tbFornecedor.idFornecedor = tbProduto.idFornecedor
-
---6)
-SELECT nomeFornecedor AS 'Fornecedor', descricaoProduto AS 'Produto' FROM tbFornecedor
-	CROSS JOIN tbProduto
